@@ -15,20 +15,14 @@
     "start:e2e": "mocha --timeout 4000 --file ./build/e2e.js \"./build/e2e/**/*.js\"",
     "e2e": "npm run build:e2e && concurrently -r \"tsc -p tsconfig.e2e.json -w\" \"mocha --file ./build/e2e.js -w \\\"./build/e2e/**/*.js\\\"\"",
     "lint": "eslint --ext ts src",
-    "lint:fix": "eslint --ext ts --fix src",
-    "makemigrations": "foal rmdir build && tsc -p tsconfig.app.json && npx typeorm migration:generate --name migration && tsc -p tsconfig.app.json",
-    "migrations": "npx typeorm migration:run",
-    "revertmigration": "npx typeorm migration:revert"
+    "lint:fix": "eslint --ext ts --fix src"
   },
   "engines": {
     "node": ">=10"
   },
   "dependencies": {
     "@foal/core": "^2.0.0",
-    "@foal/typeorm": "^2.0.0",
-    "source-map-support": "~0.5.19",
-    "better-sqlite3": "~7.5.1",
-    "typeorm": "0.2.26"
+    "source-map-support": "~0.5.19"
   },
   "devDependencies": {
     "@foal/cli": "^2.9.0",

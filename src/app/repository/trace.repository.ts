@@ -2,6 +2,8 @@ import { Trace } from "../../types/trace.model.types";
 
 /**
  * Should be replaced with an ORM and a DB.
+ * We use the repository pattern because is easier to mantain, mock
+ * and replace for an ORM solution.
  */
 export class TraceRepository {
   private items: Trace[];

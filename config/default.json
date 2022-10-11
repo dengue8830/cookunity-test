@@ -2,5 +2,8 @@
   "port": "env(PORT)",
   "settings": {
     "loggerFormat": "tiny"
+  },
+  "apilayer": {
+    "key": "env(API_LAYER_KEY)"
   }
 }

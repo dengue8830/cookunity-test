@@ -1,6 +1,6 @@
 import { Context, controller, HttpResponseInternalServerError, IAppController } from "@foal/core";
 import { OpenApiController } from "./controllers/open-api.controller";
-import { ApiController } from "./controllers";
+import { ApiController } from "./controllers/api.controller";
 
 export class AppController implements IAppController {
   subControllers = [controller("/api", ApiController), controller("/swagger", OpenApiController)];

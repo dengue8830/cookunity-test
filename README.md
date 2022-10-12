@@ -15,6 +15,7 @@ I used [FoalTS](https://foalts.org/docs/) as a minimalistic framework that allow
 
 - I should use a persistence layer like a DB with an ORM in a Kubernetes cluster, but for sake of simplicity I'm storing data in memory so just assume that the repository pattern implementation is connecting to a remote clusterized db.
 - Having in mind the 5 millons requests per minute expected traffic, this app should be deployed on a Kubernetes cluster in coordination with a devops to determine how many nodes and what the specs of each one should be having in mind that this app has the next requirements: medium network consumption, low cpu consumption and medium ram consumption.
+- I can suggest using a cache like redis to store results since the apis are idepmotent, given the same input it will return the same result.
 
 ## TODO
 

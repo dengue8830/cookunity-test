@@ -26,15 +26,24 @@ I used [FoalTS](https://foalts.org/docs/) as a minimalistic framework that allow
 ### Dev
 
 1. Create a .env variable using the template file and set your api-layer key in there.
-   `cp .env.template .env`
+
+```shell script
+cp .env.template .env
+```
 
 2. Start a dev server with:
-   `npm run dev`
+
+```shell script
+npm run dev
+```
 
 ### Automatic testing
 
 Start e2e test suite with:
-`npm run e2e`
+
+```shell script
+npm run e2e
+```
 
 ### Live testing
 
